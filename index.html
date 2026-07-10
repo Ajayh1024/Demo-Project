@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Sample Code</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 2rem; }
+		pre { background:#f4f4f4; padding:1rem; border-radius:4px; }
+	</style>
+</head>
+<body>
+	<h1>Sample Code</h1>
+	<p>Minimal HTML + JavaScript example.</p>
+
+	<button id="btn">Click me</button>
+	<p id="out">Not clicked yet.</p>
+
+	<pre><code id="code">&lt;!-- Sample JavaScript --&gt;
+const btn = document.getElementById('btn');
+btn.addEventListener('click', () =&gt; {
+	const out = document.getElementById('out');
+	out.textContent = 'Button clicked at ' + new Date().toLocaleTimeString();
+});
+</code></pre>
+
+	<script>
+		const btn = document.getElementById('btn');
+		btn.addEventListener('click', () => {
+			const out = document.getElementById('out');
+			out.textContent = 'Button clicked at ' + new Date().toLocaleTimeString();
+		});
+	</script>
+</body>
+</html>
